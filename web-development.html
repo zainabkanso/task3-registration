@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web Development | Improve AC</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Course Details CSS -->
+    <link rel="stylesheet" href="css/web.css" />
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header>
+      <nav class="navbar academy-navbar">
+        <div class="container flex-wrap">
+          <!-- Logo -->
+          <a class="navbar-brand academy-logo" href="index.html">
+            <i class="bi bi-mortarboard-fill"></i>
+            Improve AC
+          </a>
+
+          <!-- Navigation Links -->
+          <ul
+            class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-lg-4 academy-nav-links"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="courses.html"
+              >
+                Courses
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> Pricing </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+
+             <li class="nav-item">
+    <a class="nav-link" href="my-courses.html">
+        My Courses
+    </a>
+</li>
+          </ul>
+
+         
+        </div>
+      </nav>
+    </header>
+
+    <main class="webdev-page">
+      <!-- ========== SECTION 1: HERO ========== -->
+      <section class="webdev-hero">
+        <div class="container">
+          <!-- Back Link -->
+          <a href="courses.html" class="webdev-back">
+            <i class="bi bi-arrow-left"></i>
+            Back to Courses
+          </a>
+
+          <div class="row align-items-center g-5">
+            <!-- Left: Course Introduction -->
+            <div class="col-lg-6">
+              <div class="webdev-intro">
+                <span class="webdev-label"> IMPROVE AC / COURSE DETAILS </span>
+
+                <h1>Web <em>Development.</em></h1>
+
+                <p class="webdev-tagline">Build the Web. Shape the Future.</p>
+
+                <p class="webdev-description">
+                  Learn how to create modern, beautiful, and responsive websites
+                  from scratch. Develop practical skills through hands-on
+                  projects and start your journey into web development.
+                </p>
+
+                <!-- Course Information -->
+                <div class="webdev-info">
+                  <span>
+                    <i class="bi bi-clock"></i>
+                    8 Weeks
+                  </span>
+
+                  <span>
+                    <i class="bi bi-bar-chart"></i>
+                    Beginner
+                  </span>
+
+                  <span>
+                    <i class="bi bi-laptop"></i>
+                    Online
+                  </span>
+                </div>
+
+                <a href="register.html?course=web-development"
+   class="webdev-primary-btn">
+    Enroll Now
+    <i class="bi bi-arrow-up-right"></i>
+</a>
+              </div>
+            </div>
+
+            <!-- Right: Course Visual -->
+            <div class="col-lg-6">
+              <div class="webdev-visual">
+                <!-- Course Image -->
+                <img
+                  src="images/webc.PNG"
+                  alt="Laptop showing web development code"
+                  class="webdev-image"
+                />
+
+                <!-- Floating Code Window -->
+                <div class="webdev-code">
+                  <div class="code-header">
+                    <div class="code-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+
+                    <span>index.html</span>
+                  </div>
+
+                  <pre><code><span class="code-purple">&lt;html&gt;</span>
+  <span class="code-purple">&lt;body&gt;</span>
+    <span class="code-pink">&lt;h1&gt;</span>Hello World!<span class="code-pink">&lt;/h1&gt;</span>
+    <span class="code-green">&lt;p&gt;</span>Let's build.<span class="code-green">&lt;/p&gt;</span>
+  <span class="code-purple">&lt;/body&gt;</span>
+<span class="code-purple">&lt;/html&gt;</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION 2: COURSE DETAILS ========== -->
+      <section class="webdev-details">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Left: Learning Content -->
+            <div class="col-lg-8">
+              <div class="webdev-learning">
+                <span class="webdev-label"> THE LEARNING EXPERIENCE </span>
+
+                <h2>What You'll Learn</h2>
+
+                <p class="webdev-section-desc">
+                  Everything you need to start building beautiful and functional
+                  websites.
+                </p>
+
+                <!-- Skills Grid -->
+                <div class="row g-3">
+                  <!-- HTML -->
+                  <div class="col-sm-6">
+                    <div class="webdev-skill-card">
+                      <div class="skill-icon">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+
+                      <h3>HTML5</h3>
+
+                      <p>Structure web pages using semantic HTML.</p>
+                    </div>
+                  </div>
+
+                  <!-- CSS -->
+                  <div class="col-sm-6">
+                    <div class="webdev-skill-card">
+                      <div class="skill-icon">
+                        <i class="bi bi-palette"></i>
+                      </div>
+
+                      <h3>CSS3</h3>
+
+                      <p>Style modern layouts, colors, and animations.</p>
+                    </div>
+                  </div>
+
+                  <!-- Bootstrap -->
+                  <div class="col-sm-6">
+                    <div class="webdev-skill-card">
+                      <div class="skill-icon">
+                        <i class="bi bi-grid"></i>
+                      </div>
+
+                      <h3>Bootstrap 5</h3>
+
+                      <p>
+                        Create professional layouts with Bootstrap components.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Responsive Design -->
+                  <div class="col-sm-6">
+                    <div class="webdev-skill-card">
+                      <div class="skill-icon">
+                        <i class="bi bi-phone"></i>
+                      </div>
+
+                      <h3>Responsive Design</h3>
+
+                      <p>Build websites for phones, tablets, and desktops.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Requirements -->
+                <div class="webdev-requirements">
+                  <h2>Course Requirements</h2>
+
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      No previous coding experience required
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      A laptop or computer
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Basic computer skills
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Motivation to learn and practice
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Price Card -->
+            <div class="col-lg-4">
+              <aside class="webdev-price-card">
+                <span class="price-label"> COURSE INVESTMENT </span>
+
+                <!-- Replace with real course price -->
+                <div class="course-price">$120</div>
+
+                
+                <hr />
+
+                <h3>Course Includes</h3>
+
+                <ul class="price-features">
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    8 Weeks of Learning
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    Practical Exercises
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    Hands-on Projects
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    Beginner-Friendly Lessons
+                  </li>
+                </ul>
+
+                <a href="register.html?course=web-development" class="webdev-price-btn">
+                  Register for This Course
+
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <p class="price-footer-note">
+                  Take the first step toward your future career.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="academy-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Academy -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <a href="index.html" class="footer-logo">
+              <i class="bi bi-mortarboard-fill"></i>
+              Improve AC
+            </a>
+
+            <p class="footer-description">
+              An online training academy for practical, career-focused learning.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h4>Quick Links</h4>
+
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-6 col-md-6 col-lg-2">
+            <h4>Resources</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="courses.html"> Course Catalog </a>
+              </li>
+
+              <li>
+                <a href="register.html"> Registration </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-12 col-md-6 col-lg-2">
+            <h4>Get in Touch</h4>
+
+            <a href="contact.html" class="footer-contact">
+              Contact Us
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Improve AC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

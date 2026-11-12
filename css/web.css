@@ -1,0 +1,830 @@
+
+/* =====================================
+   WEB DEVELOPMENT PAGE
+===================================== */
+
+.webdev-page {
+    --web-chocolate: #5b3828;
+    --web-dark: #302018;
+
+    background: #f7efe6;
+    padding: 35px 0 55px;
+    min-height: 65vh;
+}
+
+/* ========== BACK BUTTON ========== */
+
+.webdev-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 20px;
+    color: var(--web-chocolate);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: gap 0.3s ease;
+}
+
+.webdev-back i {
+    font-size: 18px;
+}
+
+.webdev-back:hover {
+    color: #8a624a;
+    gap: 14px;
+}
+
+/* ========== MAIN CARD ========== */
+
+.webdev-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 45px;
+
+    background: #fff8f2;
+    border: 1px solid #e5d0c0;
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(66, 35, 20, 0.08);
+}
+
+/* ========== TEXT CONTENT ========== */
+
+.webdev-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--web-chocolate);
+    margin-bottom: 15px;
+}
+
+.webdev-card h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 500;
+    color: var(--web-dark);
+    margin-bottom: 15px;
+}
+
+.webdev-card h1 em {
+    color: var(--web-chocolate);
+    font-weight: 400;
+}
+
+.webdev-description {
+    color: #705343;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.webdev-card h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--web-dark);
+    margin-bottom: 12px;
+}
+
+/* ========== SKILLS ========== */
+
+.webdev-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.webdev-skills span {
+    padding: 7px 12px;
+    background: #f3e6da;
+    border: 1px solid #e1cbb9;
+    border-radius: 20px;
+    color: #694b39;
+    font-size: 12px;
+}
+
+/* ========== ENROLL BUTTON ========== */
+
+.webdev-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 11px 22px;
+    background: var(--web-chocolate);
+    color: white;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.webdev-btn:hover {
+    background: #79503b;
+    color: white;
+}
+
+/* ========== CODE ILLUSTRATION ========== */
+
+.webdev-code {
+    background: #302620;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(55, 35, 25, 0.12);
+}
+
+.webdev-code .code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 17px;
+    background: #3c2f29;
+    color: #cbb6a9;
+    font-size: 11px;
+}
+
+.webdev-code .code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.webdev-code .code-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d48579;
+}
+
+.webdev-code .code-dots span:nth-child(2) {
+    background: #e0b56d;
+}
+
+.webdev-code .code-dots span:nth-child(3) {
+    background: #93ac85;
+}
+
+.webdev-code pre {
+    margin: 0;
+    padding: 22px;
+    color: #efe4d7;
+    font-size: 12px;
+    line-height: 1.9;
+    overflow-x: auto;
+}
+
+.webdev-code .code-purple {
+    color: #b9b8f0;
+}
+
+.webdev-code .code-pink {
+    color: #df9fac;
+}
+
+.webdev-code .code-green {
+    color: #a5c99c;
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+    .webdev-card {
+        max-width: 700px;
+        padding: 30px;
+    }
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+    .webdev-page {
+        padding: 25px 0 40px;
+        min-height: auto;
+    }
+
+    .webdev-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .webdev-card h1 {
+        font-size: 32px;
+    }
+
+    .webdev-description {
+        font-size: 13px;
+    }
+
+    .webdev-skills {
+        margin-bottom: 20px;
+    }
+
+    .webdev-code pre {
+        font-size: 11px;
+        padding: 16px;
+    }
+}
+
+/* =====================================
+   WEB DEVELOPMENT PAGE
+===================================== */
+
+.webdev-page {
+    background: var(--beige);
+}
+
+.webdev-label {
+    display: inline-block;
+    color: #90674d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* ========== SECTION 1: HERO ========== */
+
+.webdev-hero {
+    padding: 30px 0 65px;
+}
+
+.webdev-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--chocolate);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.webdev-back:hover {
+    color: var(--chocolate-hover);
+}
+
+.webdev-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+
+.webdev-intro h1 em {
+    color: #986648;
+    font-weight: 400;
+}
+
+.webdev-tagline {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.webdev-description {
+    color: #705343;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 480px;
+    margin-bottom: 22px;
+}
+
+/* Course Meta Information */
+
+.webdev-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.webdev-info span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #624735;
+    font-size: 13px;
+}
+
+.webdev-info i {
+    color: var(--chocolate);
+    font-size: 17px;
+}
+
+/* Enroll Button */
+
+.webdev-primary-btn,
+.webdev-price-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: var(--chocolate);
+    color: white;
+    border-radius: 8px;
+    padding: 13px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.webdev-primary-btn:hover,
+.webdev-price-btn:hover {
+    background: var(--chocolate-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* ========== HERO VISUAL ========== */
+
+.webdev-visual {
+    position: relative;
+    min-height: 370px;
+    padding-bottom: 45px;
+}
+
+.webdev-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(66, 35, 20, 0.12);
+}
+
+/* Floating Code Window */
+
+.webdev-code {
+    position: absolute;
+    width: 270px;
+    right: -10px;
+    bottom: 0;
+    background: #2f2423;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: #40302d;
+    color: #cdb6a9;
+    font-size: 11px;
+}
+
+.code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.code-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e99b86;
+}
+
+.code-dots span:nth-child(2) {
+    background: #e8c389;
+}
+
+.code-dots span:nth-child(3) {
+    background: #a0b99d;
+}
+
+.webdev-code pre {
+    margin: 0;
+    padding: 18px;
+    color: #e8d8cb;
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-x: auto;
+}
+
+.code-purple {
+    color: #c9a5d9;
+}
+
+.code-pink {
+    color: #e6a2a8;
+}
+
+.code-green {
+    color: #a9c99b;
+}
+
+
+/* ========== SECTION 2: DETAILS ========== */
+
+.webdev-details {
+    padding: 65px 0 85px;
+    background: #fff8f2;
+    border-top: 1px solid #ead8c9;
+}
+
+.webdev-learning h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.webdev-section-desc {
+    color: #705343;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Skill Cards */
+
+.webdev-skill-card {
+    height: 100%;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #ead8c9;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.webdev-skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(66, 35, 20, 0.08);
+}
+
+.skill-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e1d4;
+    border-radius: 10px;
+    color: var(--chocolate);
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.webdev-skill-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.webdev-skill-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #705343;
+    margin: 0;
+}
+
+
+/* ========== REQUIREMENTS ========== */
+
+.webdev-requirements {
+    margin-top: 40px;
+}
+
+.webdev-requirements h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.webdev-requirements ul,
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.webdev-requirements li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #624735;
+    font-size: 14px;
+}
+
+.webdev-requirements li i {
+    color: var(--chocolate);
+    font-size: 17px;
+}
+
+
+/* ========== PRICE CARD ========== */
+
+.webdev-price-card {
+    position: sticky;
+    top: 25px;
+    padding: 32px;
+    background: var(--beige);
+    border: 1px solid #e1cbb8;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(66, 35, 20, 0.06);
+}
+
+.price-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #90674d;
+}
+
+.course-price {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: var(--chocolate);
+    margin: 10px 0 0;
+}
+
+.price-note {
+    color: #90674d;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.webdev-price-card hr {
+    border-color: #d6baa5;
+    margin: 25px 0;
+}
+
+.webdev-price-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.price-features li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 17px;
+    color: #624735;
+    font-size: 13px;
+}
+
+.price-features li i {
+    font-size: 17px;
+    color: var(--chocolate);
+}
+
+.webdev-price-btn {
+    display: flex;
+    width: 100%;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.price-footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: #90674d;
+    margin: 15px 0 0;
+}
+
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    .webdev-hero {
+        padding-bottom: 50px;
+    }
+
+    .webdev-back {
+        margin-bottom: 25px;
+    }
+
+    .webdev-intro h1 {
+        font-size: 55px;
+    }
+
+    .webdev-visual {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .webdev-details {
+        padding: 50px 0;
+    }
+
+    .webdev-price-card {
+        position: static;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .webdev-hero {
+        padding: 22px 0 40px;
+    }
+
+    .webdev-back {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .webdev-intro h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .webdev-tagline {
+        font-size: 20px;
+    }
+
+    .webdev-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .webdev-info {
+        gap: 12px;
+    }
+
+    .webdev-info span {
+        font-size: 12px;
+    }
+
+    .webdev-visual {
+        min-height: 280px;
+        padding-bottom: 35px;
+    }
+
+    .webdev-image {
+        height: 270px;
+        border-radius: 14px;
+    }
+
+    .webdev-code {
+        width: min(245px, 80%);
+        right: 0;
+    }
+
+    .webdev-code pre {
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    .webdev-details {
+        padding: 40px 0 50px;
+    }
+
+    .webdev-learning h2 {
+        font-size: 29px;
+    }
+
+    .webdev-skill-card {
+        padding: 20px;
+    }
+
+    .webdev-requirements {
+        margin-top: 32px;
+    }
+
+    .webdev-price-card {
+        padding: 25px;
+    }
+
+    .course-price {
+        font-size: 48px;
+    }
+}
+
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    .webdev-hero {
+        padding: 30px 0 50px;
+    }
+
+    .webdev-back {
+        margin-bottom: 25px;
+    }
+
+    .webdev-intro h1 {
+        font-size: 55px;
+    }
+
+    .webdev-visual {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .webdev-details {
+        padding: 50px 0;
+    }
+
+    .webdev-price-card {
+        position: static;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .webdev-hero {
+        padding: 20px 0 35px;
+    }
+
+    .webdev-back {
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .webdev-intro h1 {
+        font-size: clamp(36px, 9vw, 44px);
+        letter-spacing: -1px;
+    }
+
+    .webdev-tagline {
+        font-size: 20px;
+    }
+
+    .webdev-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .webdev-info {
+        gap: 12px;
+    }
+
+    .webdev-info span {
+        font-size: 12px;
+    }
+
+    .webdev-primary-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* Hero Visual */
+    .webdev-visual {
+        min-height: 0;
+        padding-bottom: 35px;
+    }
+
+    .webdev-image {
+        height: 255px;
+        border-radius: 14px;
+    }
+
+    .webdev-code {
+        width: min(230px, 78%);
+        right: 0;
+    }
+
+    .webdev-code pre {
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    /* Learning Section */
+    .webdev-details {
+        padding: 40px 0 50px;
+    }
+
+    .webdev-learning h2 {
+        font-size: 28px;
+    }
+
+    .webdev-skill-card {
+        padding: 18px;
+    }
+
+    .webdev-skill-card h3 {
+        font-size: 16px;
+    }
+
+    .webdev-requirements {
+        margin-top: 30px;
+    }
+
+    .webdev-requirements h2 {
+        font-size: 25px;
+    }
+
+    /* Pricing */
+    .webdev-price-card {
+        padding: 24px;
+    }
+
+    .course-price {
+        font-size: 46px;
+    }
+}

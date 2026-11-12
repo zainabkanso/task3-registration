@@ -1,0 +1,91 @@
+
+/* Base safety: prevents images and long text from widening pages */
+*, *::before, *::after { box-sizing: border-box; }
+body { overflow-x: clip; }
+img, video { max-width: 100%; }
+main, section, .container, .row { min-width: 0; }
+
+/* ========== SMALL LAPTOPS / TABLETS ========== */
+@media (max-width: 1199.98px) {
+    /* Keep large decorative PNGs away from the form */
+    .registration-decoration { display: none; }
+
+    /* Prevent floating course visuals from extending off screen */
+    .webdev-code { right: 0; }
+    .graphic-palette, .data-dashboard { right: 0; }
+}
+
+@media (max-width: 991.98px) {
+    /* Shared navbar: brand + register on top, links underneath */
+    .academy-navbar .container {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 10px 12px;
+    }
+    .academy-logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        min-width: 0;
+        font-size: 25px;
+    }
+    .nav-register {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+    .academy-nav-links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        order: unset;
+        width: 100% !important;
+        justify-content: center;
+        gap: 12px 24px !important;
+        margin: 0;
+    }
+
+    /* Home */
+    .hero-section { padding: 35px 0 45px; }
+    .hero-content h1 { font-size: clamp(43px, 7vw, 66px); }
+    .hero-image { display: block; height: auto; }
+    .benefit-item { flex-direction: row; align-items: flex-start; gap: 12px; }
+    .benefit-icon { width: 52px; height: 52px; }
+    .benefit-icon i { font-size: 24px; }
+    .about-section { padding: 45px 0; }
+    .cta-banner { padding: 30px; }
+
+    /* Registration */
+    .registration-page { padding: 35px 0 55px; }
+    .registration-card { width: 100%; max-width: 520px; }
+
+    /* The three course pages */
+    :is(.webdev-hero, .graphic-hero, .data-hero) { padding: 25px 0 45px; }
+    :is(.webdev-back, .graphic-back, .data-back) { margin-bottom: 25px; }
+    :is(.webdev-intro, .graphic-intro, .data-intro) h1 {
+        font-size: clamp(42px, 6vw, 58px);
+    }
+    :is(.webdev-visual, .graphic-visual, .data-visual) {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    :is(.webdev-image, .graphic-image, .data-image) {
+        height: 320px;
+    }
+    :is(.webdev-details, .graphic-details, .data-details) {
+        padding: 45px 0 55px;
+    }
+    :is(.webdev-price-card, .graphic-price-card, .data-price-card) {
+        position: static;
+        max-width: 650px;
+    }
+}
+
+/* ========== PHONES ========== */
+@media (max-width: 767.98px) {
+    /* Navbar */
+    .academy-navbar { padding: 8px 0; }
+    .academy-logo { font-size: 22px; }
+    .academy-logo i { font-size: 22px; margin-right: 4px; }
+    .nav-register { font-size: 12px; padding: 9px 12px; white-space: nowrap; }

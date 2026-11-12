@@ -1,0 +1,625 @@
+/* =====================================
+   GRAPHIC DESIGN PAGE
+===================================== */
+
+.graphic-page {
+    background: var(--beige);
+}
+
+.graphic-label {
+    display: inline-block;
+    color: #90674d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* ========== HERO ========== */
+
+.graphic-hero {
+    padding: 30px 0 65px;
+}
+
+.graphic-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--chocolate);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.graphic-back:hover {
+    color: var(--chocolate-hover);
+}
+
+.graphic-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(46px, 5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+
+.graphic-intro h1 em {
+    color: #a77463;
+    font-weight: 400;
+}
+
+.graphic-tagline {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.graphic-description {
+    color: #705343;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 480px;
+    margin-bottom: 22px;
+}
+
+/* Course Information */
+
+.graphic-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.graphic-info span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #624735;
+    font-size: 13px;
+}
+
+.graphic-info i {
+    color: var(--chocolate);
+    font-size: 17px;
+}
+
+/* Enroll Button */
+
+.graphic-primary-btn,
+.graphic-price-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: var(--chocolate);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.graphic-primary-btn:hover,
+.graphic-price-btn:hover {
+    background: var(--chocolate-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* ========== HERO VISUAL ========== */
+
+.graphic-visual {
+    position: relative;
+    min-height: 380px;
+    padding: 15px 30px 40px 0;
+}
+
+.graphic-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(66, 35, 20, 0.12);
+}
+
+/* Floating Palette */
+
+.graphic-palette {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 210px;
+    padding: 17px;
+    background: #fffaf5;
+    border: 1px solid #ead8c9;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(66, 35, 20, 0.15);
+}
+
+.palette-title {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #705343;
+    margin-bottom: 12px;
+}
+
+.palette-colors {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.palette-colors span {
+    flex: 1;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.palette-colors span:nth-child(1) {
+    background: #422314;
+}
+
+.palette-colors span:nth-child(2) {
+    background: #b5836d;
+}
+
+.palette-colors span:nth-child(3) {
+    background: #d7afa0;
+}
+
+.palette-colors span:nth-child(4) {
+    background: #e9ccab;
+}
+
+.palette-colors span:nth-child(5) {
+    background: #f5e9dc;
+}
+
+.graphic-palette small {
+    color: #90674d;
+    font-size: 11px;
+}
+
+/* Creative Sticker */
+
+.graphic-sticker {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background: #e9ccab;
+    color: var(--chocolate);
+    border-radius: 30px;
+    padding: 9px 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.graphic-sticker i {
+    margin-right: 5px;
+}
+
+
+/* ========== SECTION 2 ========== */
+
+.graphic-details {
+    background: #fff8f2;
+    border-top: 1px solid #ead8c9;
+    padding: 65px 0 80px;
+}
+
+.graphic-learning h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.graphic-section-desc {
+    color: #705343;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* ========== SKILL CARDS ========== */
+
+.graphic-skill-card {
+    height: 100%;
+    padding: 24px;
+    background: white;
+    border: 1px solid #ead8c9;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.graphic-skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(66, 35, 20, 0.08);
+}
+
+.graphic-skill-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e1d4;
+    color: var(--chocolate);
+    border-radius: 10px;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.graphic-skill-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.graphic-skill-card p {
+    color: #705343;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ========== REQUIREMENTS ========== */
+
+.graphic-requirements {
+    margin-top: 38px;
+}
+
+.graphic-requirements h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.graphic-requirements ul,
+.graphic-price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.graphic-requirements li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #624735;
+    font-size: 14px;
+}
+
+.graphic-requirements li i {
+    color: var(--chocolate);
+    font-size: 17px;
+}
+
+
+/* ========== PRICE CARD ========== */
+
+.graphic-price-card {
+    position: sticky;
+    top: 25px;
+    background: var(--beige);
+    border: 1px solid #e1cbb8;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(66, 35, 20, 0.06);
+}
+
+.graphic-price-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #90674d;
+}
+
+.graphic-price {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: var(--chocolate);
+    margin-top: 10px;
+}
+
+.graphic-price-note {
+    color: #90674d;
+    font-size: 12px;
+    margin: 0 0 20px;
+}
+
+.graphic-price-card hr {
+    border-color: #d6baa5;
+    margin: 25px 0;
+}
+
+.graphic-price-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.graphic-price-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 17px;
+    color: #624735;
+    font-size: 13px;
+}
+
+.graphic-price-features i {
+    font-size: 17px;
+    color: var(--chocolate);
+}
+
+.graphic-price-btn {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.graphic-footer-note {
+    color: #90674d;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    .graphic-hero {
+        padding-bottom: 50px;
+    }
+
+    .graphic-back {
+        margin-bottom: 25px;
+    }
+
+    .graphic-intro h1 {
+        font-size: 55px;
+    }
+
+    .graphic-visual {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .graphic-details {
+        padding: 50px 0;
+    }
+
+    .graphic-price-card {
+        position: static;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .graphic-hero {
+        padding: 22px 0 40px;
+    }
+
+    .graphic-back {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .graphic-intro h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .graphic-tagline {
+        font-size: 20px;
+    }
+
+    .graphic-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .graphic-info {
+        gap: 12px;
+    }
+
+    .graphic-info span {
+        font-size: 12px;
+    }
+
+    .graphic-visual {
+        min-height: auto;
+        padding: 12px 15px 40px 0;
+    }
+
+    .graphic-image {
+        height: 270px;
+        border-radius: 14px;
+    }
+
+    .graphic-palette {
+        width: 165px;
+        padding: 12px;
+        bottom: 0;
+    }
+
+    .palette-colors span {
+        height: 26px;
+    }
+
+    .graphic-sticker {
+        font-size: 9px;
+        padding: 7px 10px;
+    }
+
+    .graphic-details {
+        padding: 40px 0 50px;
+    }
+
+    .graphic-learning h2 {
+        font-size: 29px;
+    }
+
+    .graphic-skill-card {
+        padding: 20px;
+    }
+
+    .graphic-requirements {
+        margin-top: 30px;
+    }
+
+    .graphic-price-card {
+        padding: 25px;
+    }
+
+    .graphic-price {
+        font-size: 48px;
+    }
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    .graphic-hero {
+        padding: 30px 0 50px;
+    }
+
+    .graphic-back {
+        margin-bottom: 25px;
+    }
+
+    .graphic-intro h1 {
+        font-size: 55px;
+    }
+
+    .graphic-visual {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .graphic-details {
+        padding: 50px 0;
+    }
+
+    .graphic-price-card {
+        position: static;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .graphic-hero {
+        padding: 20px 0 35px;
+    }
+
+    .graphic-back {
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .graphic-intro h1 {
+        font-size: clamp(36px, 9vw, 44px);
+        letter-spacing: -1px;
+    }
+
+    .graphic-tagline {
+        font-size: 20px;
+    }
+
+    .graphic-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .graphic-info {
+        gap: 12px;
+    }
+
+    .graphic-info span {
+        font-size: 12px;
+    }
+
+    .graphic-primary-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* Hero Visual */
+    .graphic-visual {
+        min-height: 0;
+        padding: 10px 15px 40px 0;
+    }
+
+    .graphic-image {
+        height: 255px;
+        border-radius: 14px;
+    }
+
+    .graphic-palette {
+        width: min(165px, 60%);
+        padding: 12px;
+        bottom: 0;
+    }
+
+    .palette-colors span {
+        height: 26px;
+    }
+
+    .graphic-sticker {
+        font-size: 9px;
+        padding: 7px 10px;
+    }
+
+    /* Learning Section */
+    .graphic-details {
+        padding: 40px 0 50px;
+    }
+
+    .graphic-learning h2 {
+        font-size: 28px;
+    }
+
+    .graphic-skill-card {
+        padding: 18px;
+    }
+
+    .graphic-skill-card h3 {
+        font-size: 16px;
+    }
+
+    .graphic-requirements {
+        margin-top: 30px;
+    }
+
+    .graphic-requirements h2 {
+        font-size: 25px;
+    }
+
+    /* Pricing */
+    .graphic-price-card {
+        padding: 24px;
+    }
+
+    .graphic-price {
+        font-size: 46px;
+    }
+}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Course Registration | Improve AC</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Registration CSS -->
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="js/enrollments.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header>
+      <nav class="navbar academy-navbar">
+        <div class="container flex-wrap">
+          <!-- Logo -->
+          <a class="navbar-brand academy-logo" href="index.html">
+            <i class="bi bi-mortarboard-fill"></i>
+            Improve AC
+          </a>
+
+          <!-- Navigation Links -->
+          <ul
+            class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-lg-4 academy-nav-links"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html"> Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> Pricing </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+            <li class="nav-item">
+    <a class="nav-link" href="my-courses.html">
+        My Courses
+    </a>
+</li>
+          </ul>
+
+        
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========== REGISTRATION PAGE ========== -->
+    <main class="registration-page">
+      <!-- Decorative Images -->
+      <img
+        src="images/registration-books.png"
+        class="registration-decoration decor-books"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <img
+        src="images/registration-leaves.png"
+        class="registration-decoration decor-leaves"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <img
+        src="images/registration-pencils.png"
+        class="registration-decoration decor-pencils"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="container registration-container">
+        <!-- Page Introduction -->
+        <div class="registration-intro text-center">
+          <span class="registration-label"> ONLINE TRAINING ACADEMY </span>
+        </div>
+
+        <!-- ========== REGISTRATION CARD ========== -->
+        <section class="registration-card">
+          <!-- Card Heading -->
+          <div class="registration-heading text-center">
+            <h1>Course Registration</h1>
+
+            <p>Fill in your details below to get started.</p>
+
+            <!-- Decorative Divider -->
+            <div class="registration-divider">
+              <span></span>
+
+              <i class="bi bi-mortarboard"></i>
+
+              <span></span>
+            </div>
+          </div>
+
+          
+<!-- ========== STUDENT REGISTRATION FORM ========== -->
+
+<form id="studentRegistrationForm">
+
+    <div class="row g-3">
+
+        <!-- Full Name -->
+        <div class="col-12">
+            <label for="studentName" class="form-label">
+                Full Name *
+            </label>
+
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-person"></i>
+                </span>
+
+                <input type="text"
+                       class="form-control"
+                       id="studentName"
+                       name="name"
+                       placeholder="Enter your full name"
+                       autocomplete="name"
+                       required>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-12">
+            <label for="studentEmail" class="form-label">
+                Email Address *
+            </label>
+
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-envelope"></i>
+                </span>
+
+                <input type="email"
+                       class="form-control"
+                       id="studentEmail"
+                       name="email"
+                       placeholder="Enter your email"
+                       autocomplete="email"
+                       required>
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-12">
+            <label for="studentPhone" class="form-label">
+                Phone Number *
+            </label>
+
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-telephone"></i>
+                </span>
+
+                <input type="tel"
+                       class="form-control"
+                       id="studentPhone"
+                       name="phone"
+                       placeholder="Enter your phone number"
+                       autocomplete="tel"
+                       required>
+            </div>
+        </div>
+
+        <!-- Course Selection -->
+        <div class="col-12">
+            <label for="studentCourse" class="form-label">
+                Select Course *
+            </label>
+
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-book"></i>
+                </span>
+
+                <select id="studentCourse"
+                        name="course"
+                        class="form-select"
+                        required>
+
+                    <option value="" selected disabled>
+                        Choose your course
+                    </option>
+
+                    <option value="web-development">
+                        Web Development
+                    </option>
+
+                    <option value="graphic-design">
+                        Graphic Design
+                    </option>
+
+                    <option value="data-analysis">
+                        Data Analysis
+                    </option>
+
+                </select>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div class="col-12">
+            <label for="studentMessage" class="form-label">
+                Additional Message (Optional)
+            </label>
+
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-chat-left-text"></i>
+                </span>
+
+                <textarea id="studentMessage"
+                          name="message"
+                          class="form-control"
+                          rows="3"
+                          placeholder="Any questions?"></textarea>
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="col-12">
+            <button type="submit"
+                    class="btn registration-submit w-100">
+                Register for Course
+                <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+        </div>
+
+    </div>
+
+</form>
+
+        </section>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="academy-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Academy Information -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <a href="index.html" class="footer-logo">
+              <i class="bi bi-mortarboard-fill"></i>
+              Improve AC
+            </a>
+
+            <p class="footer-description">
+              An online training academy for practical, career-focused learning.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h4>Quick Links</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="courses.html">Courses</a>
+              </li>
+
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-6 col-md-6 col-lg-2">
+            <h4>Resources</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="courses.html"> Course Catalog </a>
+              </li>
+
+              <li>
+                <a href="register.html"> Registration </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Get in Touch -->
+          <div class="col-12 col-md-6 col-lg-2">
+            <h4>Get in Touch</h4>
+
+            <a href="contact.html" class="footer-contact">
+              Contact Us
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Improve AC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,592 @@
+/* =====================================
+   DATA ANALYSIS PAGE
+===================================== */
+
+.data-page {
+  background: var(--beige);
+}
+
+.data-label {
+  display: inline-block;
+  color: #90674d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* ========== SECTION 1: HERO ========== */
+
+.data-hero {
+  padding: 30px 0 65px;
+}
+
+.data-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--chocolate);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.data-back:hover {
+  color: var(--chocolate-hover);
+}
+
+.data-intro h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(46px, 5vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.data-intro h1 em {
+  color: #986648;
+  font-weight: 400;
+}
+
+.data-tagline {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.data-description {
+  color: #705343;
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 480px;
+  margin-bottom: 22px;
+}
+
+/* Course Information */
+
+.data-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.data-info span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #624735;
+  font-size: 13px;
+}
+
+.data-info i {
+  color: var(--chocolate);
+  font-size: 17px;
+}
+
+/* Buttons */
+
+.data-primary-btn,
+.data-price-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: var(--chocolate);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.data-primary-btn:hover,
+.data-price-btn:hover {
+  background: var(--chocolate-hover);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ========== HERO IMAGE ========== */
+
+.data-visual {
+  position: relative;
+  padding: 0 25px 55px 0;
+}
+
+.data-image {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(66, 35, 20, 0.12);
+}
+
+/* Floating Dashboard */
+
+.data-dashboard {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 240px;
+  padding: 18px;
+  background: #fffaf5;
+  border: 1px solid #e1cbb8;
+  border-radius: 13px;
+  box-shadow: 0 12px 28px rgba(66, 35, 20, 0.16);
+}
+
+.dashboard-top,
+.dashboard-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #705343;
+}
+
+.dashboard-top {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-top i {
+  font-size: 19px;
+  color: var(--chocolate);
+}
+
+.dashboard-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  height: 100px;
+  margin: 18px 0 12px;
+  border-bottom: 1px solid #dfcbbb;
+}
+
+.dashboard-chart span {
+  flex: 1;
+  height: var(--bar-height);
+  background: #bb927b;
+  border-radius: 4px 4px 0 0;
+}
+
+.dashboard-chart span:nth-child(even) {
+  background: #69432f;
+}
+
+.dashboard-bottom {
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.dashboard-bottom i {
+  color: var(--chocolate);
+  font-size: 16px;
+}
+
+/* ========== SECTION 2: DETAILS ========== */
+
+.data-details {
+  background: #fff8f2;
+  border-top: 1px solid #ead8c9;
+  padding: 65px 0 80px;
+}
+
+.data-learning h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.data-section-desc {
+  color: #705343;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+/* Skill Cards */
+
+.data-skill-card {
+  height: 100%;
+  padding: 24px;
+  background: white;
+  border: 1px solid #ead8c9;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.data-skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(66, 35, 20, 0.08);
+}
+
+.data-skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background: #f0e1d4;
+  color: var(--chocolate);
+  border-radius: 10px;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.data-skill-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.data-skill-card p {
+  color: #705343;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Requirements */
+
+.data-requirements {
+  margin-top: 38px;
+}
+
+.data-requirements h2 {
+  font-size: 27px;
+  margin-bottom: 22px;
+}
+
+.data-requirements ul,
+.data-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-requirements li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #624735;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.data-requirements li i {
+  color: var(--chocolate);
+  font-size: 17px;
+}
+
+/* ========== PRICE CARD ========== */
+
+.data-price-card {
+  position: sticky;
+  top: 25px;
+  background: var(--beige);
+  border: 1px solid #e1cbb8;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(66, 35, 20, 0.06);
+}
+
+.data-price-label {
+  color: #90674d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.data-price {
+  font-family: Georgia, serif;
+  font-size: 55px;
+  font-weight: 600;
+  color: var(--chocolate);
+  margin-top: 10px;
+}
+
+.data-price-note {
+  color: #90674d;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.data-price-card hr {
+  border-color: #d6baa5;
+  margin: 25px 0;
+}
+
+.data-price-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.data-price-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #624735;
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.data-price-features i {
+  color: var(--chocolate);
+  font-size: 17px;
+}
+
+.data-price-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.data-price-footer {
+  color: #90674d;
+  font-size: 12px;
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+  .data-hero {
+    padding-bottom: 50px;
+  }
+
+  .data-back {
+    margin-bottom: 25px;
+  }
+
+  .data-intro h1 {
+    font-size: 55px;
+  }
+
+  .data-visual {
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .data-details {
+    padding: 50px 0;
+  }
+
+  .data-price-card {
+    position: static;
+  }
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+  .data-hero {
+    padding: 22px 0 40px;
+  }
+
+  .data-back {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+
+  .data-intro h1 {
+    font-size: 43px;
+    letter-spacing: -1px;
+  }
+
+  .data-tagline {
+    font-size: 20px;
+  }
+
+  .data-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .data-info {
+    gap: 12px;
+  }
+
+  .data-info span {
+    font-size: 12px;
+  }
+
+  .data-visual {
+    padding: 0 12px 40px 0;
+  }
+
+  .data-image {
+    height: 270px;
+    border-radius: 14px;
+  }
+
+  .data-dashboard {
+    width: min(190px, 70%);
+    padding: 12px;
+  }
+
+  .dashboard-chart {
+    height: 65px;
+    gap: 5px;
+    margin: 10px 0;
+  }
+
+  .data-details {
+    padding: 40px 0 50px;
+  }
+
+  .data-learning h2 {
+    font-size: 29px;
+  }
+
+  .data-skill-card {
+    padding: 20px;
+  }
+
+  .data-requirements {
+    margin-top: 30px;
+  }
+
+  .data-price-card {
+    padding: 25px;
+  }
+
+  .data-price {
+    font-size: 48px;
+  }
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    .data-hero {
+        padding: 30px 0 50px;
+    }
+
+    .data-back {
+        margin-bottom: 25px;
+    }
+
+    .data-intro h1 {
+        font-size: 55px;
+    }
+
+    .data-visual {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .data-details {
+        padding: 50px 0;
+    }
+
+    .data-price-card {
+        position: static;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .data-hero {
+        padding: 20px 0 35px;
+    }
+
+    .data-back {
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .data-intro h1 {
+        font-size: clamp(36px, 9vw, 44px);
+        letter-spacing: -1px;
+    }
+
+    .data-tagline {
+        font-size: 20px;
+    }
+
+    .data-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .data-info {
+        gap: 12px;
+    }
+
+    .data-info span {
+        font-size: 12px;
+    }
+
+    .data-primary-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* Hero Visual */
+    .data-visual {
+        padding: 0 12px 40px 0;
+    }
+
+    .data-image {
+        height: 255px;
+        border-radius: 14px;
+    }
+
+    .data-dashboard {
+        width: min(185px, 70%);
+        padding: 12px;
+    }
+
+    .dashboard-chart {
+        height: 65px;
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    /* Learning Section */
+    .data-details {
+        padding: 40px 0 50px;
+    }
+
+    .data-learning h2 {
+        font-size: 28px;
+    }
+
+    .data-skill-card {
+        padding: 18px;
+    }
+
+    .data-skill-card h3 {
+        font-size: 16px;
+    }
+
+    .data-requirements {
+        margin-top: 30px;
+    }
+
+    .data-requirements h2 {
+        font-size: 25px;
+    }
+
+    /* Pricing */
+    .data-price-card {
+        padding: 24px;
+    }
+
+    .data-price {
+        font-size: 46px;
+    }
+}
+

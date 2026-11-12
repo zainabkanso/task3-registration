@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pricing | Improve AC</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Pricing CSS -->
+    <link rel="stylesheet" href="css/price.css" />
+    <!-- Price Search JavaScript -->
+<script src="js/pricing.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header>
+      <nav class="navbar academy-navbar">
+        <div class="container flex-wrap">
+          <!-- Logo -->
+          <a class="navbar-brand academy-logo" href="index.html">
+            <i class="bi bi-mortarboard-fill"></i>
+            Improve AC
+          </a>
+
+          <!-- Navigation Links -->
+          <ul
+            class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-lg-4 academy-nav-links"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html"> Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="pricing.html"
+              >
+                Pricing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my-courses.html"> My Courses </a>
+            </li>
+          </ul>
+
+          <!-- Register Button -->
+          <a href="register.html" class="btn btn-chocolate nav-register">
+            Register Now
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pricing-page">
+      <!-- ========== PRICING INTRO ========== -->
+      <section class="pricing-hero">
+        <div class="container">
+          <div class="pricing-intro text-center">
+            <span class="pricing-label"> IMPROVE AC / COURSE PRICING </span>
+
+            <h1>Invest in Your <em>Future.</em></h1>
+
+            <p>
+              Explore our courses and choose the learning experience that fits
+              your goals and ambitions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PRICING CARDS ========== -->
+      <section class="pricing-section">
+        <div class="container">
+          <!-- ========== SEARCH BY PRICE ========== -->
+          <div class="pricing-search">
+            <div class="pricing-search-heading">
+              <p>Find the perfect course that fits your budget.</p>
+            </div>
+
+            <div class="row g-3 align-items-end">
+              <!-- Minimum Price -->
+              <div class="col-md-4">
+                <label for="minPrice" class="form-label">
+                  Minimum Price ($)
+                </label>
+
+                <input
+                  type="number"
+                  id="minPrice"
+                  class="form-control"
+                  min="0"
+                  placeholder="Min price"
+                />
+              </div>
+
+              <!-- Maximum Price -->
+              <div class="col-md-4">
+                <label for="maxPrice" class="form-label">
+                  Maximum Price ($)
+                </label>
+
+                <input
+                  type="number"
+                  id="maxPrice"
+                  class="form-control"
+                  min="0"
+                  placeholder="Max price"
+                />
+              </div>
+
+              <!-- Reset Button -->
+              <div class="col-md-4">
+                <button type="button" id="resetPrice" class="pricing-reset-btn">
+                  <i class="bi bi-arrow-counterclockwise"></i>
+                  Reset Filters
+                </button>
+              </div>
+            </div>
+
+            <!-- Results Count -->
+            <p
+              id="priceResults"
+              class="pricing-results"
+              role="status"
+              aria-live="polite"
+            >
+              Showing 3 courses
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <!-- ===== WEB DEVELOPMENT ===== -->
+            <div class="col-md-6 col-lg-4 pricing-course" data-price="120">
+              <article class="card pricing-card h-100">
+                <div class="card-body d-flex flex-column">
+                  <!-- Icon -->
+                  <div class="pricing-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+
+                  <span class="pricing-category"> DEVELOPMENT </span>
+
+                  <h2>Web Development</h2>
+
+                  <p class="pricing-description">
+                    Build beautiful, responsive websites using modern
+                    development technologies.
+                  </p>
+
+                  <!-- Price -->
+                  <div class="pricing-amount">$120</div>
+
+                  <p class="pricing-period">Full Course</p>
+
+                  <hr />
+
+                  <!-- Features -->
+                  <h3>What's Included?</h3>
+
+                  <ul class="pricing-features">
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      8 Weeks of Learning
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      HTML5 & CSS3
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Bootstrap 5
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Responsive Design
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Practical Projects
+                    </li>
+                  </ul>
+
+                  <!-- Buttons -->
+                  <div class="pricing-actions mt-auto">
+                    <a
+                      href="register.html?course=web-development"
+                      class="pricing-btn"
+                    >
+                      Enroll Now
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="web-development.html" class="pricing-details-link">
+                      View Course Details
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ===== GRAPHIC DESIGN ===== -->
+            <div class="col-md-6 col-lg-4 pricing-course" data-price="100">
+              <article class="card pricing-card h-100">
+                <div class="card-body d-flex flex-column">
+                  <!-- Icon -->
+                  <div class="pricing-icon">
+                    <i class="bi bi-palette"></i>
+                  </div>
+
+                  <span class="pricing-category"> CREATIVE DESIGN </span>
+
+                  <h2>Graphic Design</h2>
+
+                  <p class="pricing-description">
+                    Discover the art of design, visual communication, branding,
+                    and creativity.
+                  </p>
+
+                  <!-- Price -->
+                  <div class="pricing-amount">$100</div>
+
+                  <p class="pricing-period">Full Course</p>
+
+                  <hr />
+
+                  <!-- Features -->
+                  <h3>What's Included?</h3>
+
+                  <ul class="pricing-features">
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      6 Weeks of Learning
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Design Principles
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Typography & Colors
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Brand Identity
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Creative Projects
+                    </li>
+                  </ul>
+
+                  <!-- Buttons -->
+                  <div class="pricing-actions mt-auto">
+                    <a
+                      href="register.html?course=graphic-design"
+                      class="pricing-btn"
+                    >
+                      Enroll Now
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="graphic-design.html" class="pricing-details-link">
+                      View Course Details
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ===== DATA ANALYSIS ===== -->
+            <div class="col-md-6 col-lg-4 pricing-course" data-price="140">
+              <article class="card pricing-card h-100">
+                <div class="card-body d-flex flex-column">
+                  <!-- Icon -->
+                  <div class="pricing-icon">
+                    <i class="bi bi-bar-chart-line"></i>
+                  </div>
+
+                  <span class="pricing-category"> DATA & TECHNOLOGY </span>
+
+                  <h2>Data Analysis</h2>
+
+                  <p class="pricing-description">
+                    Turn data into valuable insights using powerful analysis
+                    tools and techniques.
+                  </p>
+
+                  <!-- Price -->
+                  <div class="pricing-amount">$140</div>
+
+                  <p class="pricing-period">Full Course</p>
+
+                  <hr />
+
+                  <!-- Features -->
+                  <h3>What's Included?</h3>
+
+                  <ul class="pricing-features">
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      10 Weeks of Learning
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Excel & Spreadsheets
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Python & SQL
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Data Visualization
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Practical Data Projects
+                    </li>
+                  </ul>
+
+                  <!-- Buttons -->
+                  <div class="pricing-actions mt-auto">
+                    <a
+                      href="register.html?course=data-analysis"
+                      class="pricing-btn"
+                    >
+                      Enroll Now
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="data-analysis.html" class="pricing-details-link">
+                      View Course Details
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+<div id="noPriceResults"
+     class="pricing-no-results"
+     hidden>
+    <i class="bi bi-search"></i>
+    <h3>No Courses Found</h3>
+    <p>Try a different price range.</p>
+</div>
+          <!-- ========== HELP BANNER ========== -->
+          <div class="pricing-help">
+            <div class="row align-items-center g-3">
+              <div class="col-md-8">
+                <span class="pricing-help-label"> NEED SOME GUIDANCE? </span>
+
+                <h2>Not Sure Which Course to Choose?</h2>
+
+                <p>
+                  We're here to help you find the right course for your future.
+                </p>
+              </div>
+
+              <div class="col-md-4 text-md-end">
+                <a href="contact.html" class="pricing-contact-btn">
+                  Contact Us
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="academy-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Academy Information -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <a href="index.html" class="footer-logo">
+              <i class="bi bi-mortarboard-fill"></i>
+              Improve AC
+            </a>
+
+            <p class="footer-description">
+              An online training academy for practical, career-focused learning.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h4>Quick Links</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="courses.html">Courses</a>
+              </li>
+
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-6 col-md-6 col-lg-2">
+            <h4>Resources</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="courses.html"> Course Catalog </a>
+              </li>
+
+              <li>
+                <a href="register.html"> Registration </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Get in Touch -->
+          <div class="col-12 col-md-6 col-lg-2">
+            <h4>Get in Touch</h4>
+
+            <a href="contact.html" class="footer-contact">
+              Contact Us
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Improve AC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

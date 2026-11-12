@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Improve AC</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header>
+      <nav class="navbar academy-navbar">
+        <div class="container flex-wrap">
+          <!-- Logo -->
+          <a class="navbar-brand academy-logo" href="index.html">
+            <i class="bi bi-mortarboard-fill"></i>
+            Improve AC
+          </a>
+
+          <!-- Navigation Links -->
+          <ul
+            class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-lg-4 academy-nav-links"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html"> Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> Pricing </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contact.html"
+              >
+                Contact
+              </a>
+            </li>
+             <li class="nav-item">
+    <a class="nav-link" href="my-courses.html">
+        My Courses
+    </a>
+</li>
+          </ul>
+
+          <!-- Register Button -->
+          <a href="register.html" class="btn btn-chocolate nav-register">
+            Register Now
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <!-- ========== SECTION 1: INTRODUCTION ========== -->
+      <section class="contact-hero">
+        <div class="container">
+          <div class="contact-intro text-center">
+            <span class="contact-label"> IMPROVE AC / GET IN TOUCH </span>
+
+            <h1>Let's <em>Connect.</em></h1>
+
+            <p>
+              Have questions about our courses, pricing, or registration? We'd
+              love to hear from you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION 2: CONTACT ========== -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="row g-4 align-items-stretch">
+            <!-- LEFT: Information -->
+            <div class="col-lg-5">
+              <div class="contact-info">
+                <span class="contact-info-label"> WE'RE HERE TO HELP </span>
+
+                <h2>Your Journey Starts with a Conversation.</h2>
+
+                <p class="contact-info-text">
+                  Whether you're looking for the right course or need help with
+                  registration, Improve AC is here to guide you.
+                </p>
+
+                <!-- Course Guidance -->
+                <a href="courses.html" class="contact-info-item">
+                  <span class="contact-info-icon">
+                    <i class="bi bi-book"></i>
+                  </span>
+
+                  <span class="contact-item-content">
+                    <strong>Explore Courses</strong>
+                    <small> Find your perfect learning path </small>
+                  </span>
+
+                  <i class="bi bi-arrow-up-right contact-item-arrow"></i>
+                </a>
+
+                <!-- Pricing -->
+                <a href="pricing.html" class="contact-info-item">
+                  <span class="contact-info-icon">
+                    <i class="bi bi-tag"></i>
+                  </span>
+
+                  <span class="contact-item-content">
+                    <strong>Course Pricing</strong>
+                    <small> Discover course fees and benefits </small>
+                  </span>
+
+                  <i class="bi bi-arrow-up-right contact-item-arrow"></i>
+                </a>
+
+                <!-- Registration -->
+                <a href="register.html" class="contact-info-item">
+                  <span class="contact-info-icon">
+                    <i class="bi bi-mortarboard"></i>
+                  </span>
+
+                  <span class="contact-item-content">
+                    <strong>Course Registration</strong>
+                    <small> Start learning with Improve AC </small>
+                  </span>
+
+                  <i class="bi bi-arrow-up-right contact-item-arrow"></i>
+                </a>
+
+                <!-- Decorative Element -->
+                <div class="contact-decoration" aria-hidden="true">
+                  <i class="bi bi-stars"></i>
+
+                  <span> LEARN • GROW • SUCCEED </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: Contact Form -->
+            <div class="col-lg-7">
+              <div class="contact-form-card">
+                <!-- Form Heading -->
+                <div class="contact-form-heading">
+                  <span class="contact-form-label"> SEND US A MESSAGE </span>
+
+                  <h2>How Can We Help?</h2>
+
+                  <p>Fill in the form below and send us your question.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form
+                  action="https://formsubmit.co/your-email@example.com"
+                  method="POST"
+                >
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Improve AC Contact Message"
+                  />
+
+                  <div class="row g-3">
+                    <!-- Name -->
+                    <div class="col-md-6">
+                      <label for="contactName" class="form-label">
+                        Full Name *
+                      </label>
+
+                      <input
+                        type="text"
+                        id="contactName"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your full name"
+                        autocomplete="name"
+                        required
+                      />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                      <label for="contactEmail" class="form-label">
+                        Email Address *
+                      </label>
+
+                      <input
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        class="form-control"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required
+                      />
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-12">
+                      <label for="contactPhone" class="form-label">
+                        Phone Number *
+                      </label>
+
+                      <input
+                        type="tel"
+                        id="contactPhone"
+                        name="phone"
+                        class="form-control"
+                        placeholder="+961 XX XXX XXX"
+                        autocomplete="tel"
+                        required
+                      />
+                    </div>
+
+                    <!-- Course Selection -->
+                    <div class="col-12">
+                      <label for="contactCourse" class="form-label">
+                        Select Course *
+                      </label>
+
+                      <select
+                        id="contactCourse"
+                        name="course"
+                        class="form-select"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Choose a course
+                        </option>
+
+                        <option value="Web Development">Web Development</option>
+
+                        <option value="Graphic Design">Graphic Design</option>
+
+                        <option value="Data Analysis">Data Analysis</option>
+
+                        <option value="General Inquiry">General Inquiry</option>
+                      </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="col-12">
+                      <label for="contactMessage" class="form-label">
+                        Message *
+                      </label>
+
+                      <textarea
+                        id="contactMessage"
+                        name="message"
+                        class="form-control"
+                        rows="4"
+                        placeholder="How can we help you?"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="col-12">
+                      <button type="submit" class="btn contact-submit">
+                        Send Message
+
+                        <i class="bi bi-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="academy-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Academy Information -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <a href="index.html" class="footer-logo">
+              <i class="bi bi-mortarboard-fill"></i>
+              Improve AC
+            </a>
+
+            <p class="footer-description">
+              An online training academy for practical, career-focused learning.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h4>Quick Links</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="courses.html">Courses</a>
+              </li>
+
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-6 col-md-6 col-lg-2">
+            <h4>Resources</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="courses.html"> Course Catalog </a>
+              </li>
+
+              <li>
+                <a href="register.html"> Registration </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Get in Touch -->
+          <div class="col-12 col-md-6 col-lg-2">
+            <h4>Get in Touch</h4>
+
+            <a href="contact.html" class="footer-contact">
+              Contact Us
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Improve AC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

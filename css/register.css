@@ -1,0 +1,580 @@
+
+/* =====================================
+   REGISTRATION PAGE
+===================================== */
+
+.registration-page {
+    position: relative;
+    overflow: hidden;
+    background: #f7efe6;
+    padding: 40px 0 60px;
+}
+
+.registration-container {
+    position: relative;
+    z-index: 2;
+}
+
+.registration-intro {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.registration-label {
+    color: var(--chocolate);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* =====================================
+   REGISTRATION CARD
+===================================== */
+
+.registration-card {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 25px 32px;
+
+    background: #fff8f2;
+    border: 1px solid #e5d0c0;
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(66, 35, 20, 0.08);
+}
+
+/* =====================================
+   CARD HEADING
+===================================== */
+
+.registration-heading {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.registration-heading h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.registration-heading p {
+    color: #705343;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =====================================
+   DECORATIVE DIVIDER
+===================================== */
+
+.registration-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 14px;
+    color: var(--chocolate);
+    font-size: 20px;
+}
+
+.registration-divider span {
+    width: 60px;
+    height: 1px;
+    background: #b68b70;
+}
+
+/* =====================================
+   FORM SPACING
+===================================== */
+
+.registration-card .row {
+    --bs-gutter-x: 14px;
+    --bs-gutter-y: 12px;
+}
+
+.registration-card .mb-3 {
+    margin-bottom: 12px !important;
+}
+
+/* =====================================
+   FORM LABELS
+===================================== */
+
+.registration-card .form-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+/* =====================================
+   FORM INPUTS
+===================================== */
+
+.registration-card .input-group-text,
+.registration-card .form-control,
+.registration-card .form-select {
+    background: #fffaf5;
+    border: 1px solid #cdb19c;
+    color: var(--dark);
+
+    font-size: 13px;
+    padding: 9px 11px;
+    min-width: 0;
+    border-radius: 7px;
+}
+
+.registration-card .input-group-text {
+    color: var(--chocolate);
+    font-size: 16px;
+    padding: 9px 11px;
+    border-right: 0;
+    border-radius: 7px 0 0 7px;
+}
+
+.registration-card .input-group > .form-control,
+.registration-card .input-group > .form-select {
+    border-left: 0;
+    border-radius: 0 7px 7px 0;
+}
+
+.registration-card .form-control::placeholder {
+    color: #9a8170;
+    font-size: 12px;
+}
+
+/* =====================================
+   INPUT FOCUS
+===================================== */
+
+.registration-card .form-control:focus,
+.registration-card .form-select:focus {
+    background: #fffaf5;
+    border-color: #cdb19c;
+    box-shadow: none;
+    outline: none;
+}
+
+.registration-card .input-group:focus-within {
+    border-radius: 7px;
+    box-shadow: 0 0 0 3px rgba(66, 35, 20, 0.08);
+}
+
+.registration-card .input-group:focus-within .input-group-text {
+    border-color: var(--chocolate);
+}
+
+.registration-card .input-group:focus-within .form-control,
+.registration-card .input-group:focus-within .form-select {
+    border-color: var(--chocolate);
+}
+
+/* =====================================
+   TEXTAREA
+===================================== */
+
+.registration-card textarea.form-control {
+    min-height: 75px;
+    resize: vertical;
+    border: 1px solid #cdb19c;
+    border-radius: 7px;
+}
+
+.registration-card textarea.form-control:focus {
+    border-color: var(--chocolate);
+    box-shadow: 0 0 0 3px rgba(66, 35, 20, 0.08);
+}
+
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
+
+.registration-submit {
+    width: 100%;
+    background: var(--chocolate);
+    color: #fff;
+
+    padding: 10px 15px;
+    margin-top: 8px;
+
+    border: 1px solid var(--chocolate);
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.registration-submit:hover {
+    background: var(--chocolate-hover);
+    border-color: var(--chocolate-hover);
+    color: #fff;
+}
+
+/* =====================================
+   PAGE DECORATIONS
+===================================== */
+
+.registration-decoration {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+/* Books and Coffee - Bottom Left */
+
+.decor-books {
+    width: 235px;
+    left: 0;
+    bottom: 15px;
+}
+
+/* Green Leaves - Top Right */
+
+.decor-leaves {
+    width: 210px;
+    right: 0;
+    top: 0;
+}
+
+/* Pencil Holder - Bottom Right */
+
+.decor-pencils {
+    width: 125px;
+    right: 20px;
+    bottom: 15px;
+}
+
+/* =====================================
+   SMALL DESKTOP
+===================================== */
+
+@media (max-width: 1399px) {
+
+    .decor-books {
+        width: 190px;
+    }
+
+    .decor-leaves {
+        width: 170px;
+    }
+
+    .decor-pencils {
+        width: 105px;
+        right: 10px;
+    }
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1199px) {
+
+    .registration-decoration {
+        display: none;
+    }
+
+    .registration-page {
+        padding: 35px 0 50px;
+    }
+
+    .registration-card {
+        max-width: 560px;
+    }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 767px) {
+
+    .registration-page {
+        padding: 28px 0 40px;
+    }
+
+    .registration-intro {
+        margin-bottom: 15px;
+    }
+
+    .registration-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .registration-card {
+        max-width: 100%;
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .registration-heading {
+        margin-bottom: 16px;
+    }
+
+    .registration-heading h1 {
+        font-size: 28px;
+    }
+
+    .registration-heading p {
+        font-size: 12px;
+    }
+
+    .registration-divider span {
+        width: 45px;
+    }
+
+    .registration-card .form-label {
+        font-size: 12px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .registration-card .input-group-text {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    .registration-submit {
+        padding: 11px;
+        font-size: 13px;
+    }
+}
+
+/* =====================================
+   EXTRA SMALL PHONES
+===================================== */
+
+@media (max-width: 375px) {
+
+    .registration-card {
+        padding: 20px 14px;
+    }
+
+    .registration-heading h1 {
+        font-size: 25px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select {
+        font-size: 12px;
+    }
+}
+
+
+/* ========== COMPACT REGISTRATION PAGE ========== */
+
+.registration-page {
+    padding: 25px 0 35px;
+}
+
+.registration-intro {
+    margin-bottom: 10px;
+}
+
+.registration-card {
+    max-width: 580px;
+    padding: 18px 28px;
+}
+
+.registration-heading {
+    margin-bottom: 12px;
+}
+
+.registration-heading h1 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.registration-heading p {
+    font-size: 12px;
+}
+
+.registration-divider {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.registration-card .row {
+    --bs-gutter-y: 8px;
+}
+
+.registration-card .mb-3 {
+    margin-bottom: 8px !important;
+}
+
+.registration-card .form-label {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.registration-card .form-control,
+.registration-card .form-select,
+.registration-card .input-group-text {
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.registration-card textarea.form-control {
+    min-height: 55px;
+}
+
+.registration-submit {
+    padding: 9px;
+    margin-top: 5px;
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+    .registration-page {
+        padding: 20px 0 30px;
+    }
+
+    .registration-card {
+        padding: 18px 15px;
+    }
+
+    .registration-heading h1 {
+        font-size: 26px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select,
+    .registration-card .input-group-text {
+        padding: 7px 8px;
+    }
+}
+
+
+/* ========== TABLET ========== */
+
+@media (max-width: 1199px) {
+
+    .registration-decoration {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .registration-page {
+        padding: 40px 0 55px;
+    }
+
+    .registration-card {
+        max-width: 520px;
+        padding: 25px 30px;
+    }
+
+    .registration-heading h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .registration-page {
+        padding: 25px 0 40px;
+    }
+
+    .registration-intro {
+        margin-bottom: 15px;
+    }
+
+    .registration-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .registration-card {
+        width: 100%;
+        max-width: 520px;
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .registration-heading {
+        margin-bottom: 18px;
+    }
+
+    .registration-heading h1 {
+        font-size: 27px;
+    }
+
+    .registration-heading p {
+        font-size: 13px;
+    }
+
+    .registration-divider {
+        margin-top: 15px;
+    }
+
+    .registration-divider span {
+        width: 50px;
+    }
+
+    .registration-card .row.g-3 {
+        --bs-gutter-y: 12px;
+    }
+
+    .registration-card .form-label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select {
+        font-size: 16px;
+        min-width: 0;
+        padding: 9px 8px;
+    }
+
+    .registration-card .input-group-text {
+        padding: 9px;
+    }
+
+    .registration-card textarea {
+        min-height: 80px;
+    }
+
+    .registration-submit {
+        padding: 11px;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+
+
+/* ========== SMALL MOBILE ========== */
+
+@media (max-width: 375px) {
+
+    .registration-card {
+        padding: 20px 13px;
+    }
+
+    .registration-heading h1 {
+        font-size: 25px;
+    }
+}
+
